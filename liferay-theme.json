@@ -1,0 +1,11 @@
+{
+  "LiferayTheme": {
+    "appServerPath": "/opt/Liferay/bundles/tomcat-9.0.6",
+    "deployPath": "/opt/Liferay/bundles/deploy",
+    "url": "http://localhost:8080",
+    "appServerPathPlugin": "/home/eric/Desktop/mabuhay-theme/.web_bundle_build",
+    "deployed": true,
+    "pluginName": "mabuhay-theme",
+    "webBundleDir": "watching"
+  }
+}
