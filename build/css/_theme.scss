@@ -25,24 +25,12 @@ body {
 		}
 	}
 
-/*
-	.dropdown-menu{
-		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-		z-index: 988;
-		li {
-			a {
-				font-size: $small-font-size;
-				color: $quick-access-color;
-				white-space: nowrap;
-			}
-
-			a:active {
-				background-color: initial;
-			}
+	.portlet-barebone {
+		h2.portlet-title-text {
+			display: none;
 		}
-	}
 
-*/
+	}
 
 	.portlet {
 
@@ -73,123 +61,152 @@ body {
 
 	}
 
-
-
-
-
-		.sheet-footer  {
-			background-color: $primary-color;
-		    border-top: 1px solid #e7e7ed;
-		    bottom: 0;
-		    left: 0;
-		    margin: 0;
-		    padding: 10px 24px;
-		    width: 100%;
-		    position: fixed;
-		}
+	.sheet-footer  {
+		background-color: $primary-color;
+	    border-top: 1px solid #e7e7ed;
+	    bottom: 0;
+	    left: 0;
+	    margin: 0;
+	    padding: 10px 24px;
+	    width: 100%;
+	    position: fixed;
+	}
 	
 
 
 	#banner{
 
 		/* ----------- PST / Accessibility / Sign in / Sign up------------ */
-		.quick-access .row {
-			color: $quick-access-color;
-			font-size: $small-font-size;
-			display: -webkit-box;	
-			margin-top: $quick-access-margin;
 
-			#accessibility {
-				> li {
-					padding-right:  $accessibility-li-padding;
-					display: initial;
-				}
+		#qa {
+			margin-top: -24px;
+
+
+			
+			#psts {
+				padding: 0.5rem 1rem;
 			}
 
-			a {
-				color: $quick-access-color;
-				font-size: $small-font-size;
+			#ass {
 			}
 
-			.siu a {
-				text-decoration: $quick-access-link-text-decoration;
-				text-underline-position: $quick-access-link-text-underline-position;
+			.nav {
+				flex-direction: unset;
 			}
 		}
 
+	}
 
-		/* -------- Logo / Site name / Search --------- */
-		#header {
-			.gdp {
-				margin-top: 70px;
-				padding-bottom: 40px;
 
-				.gdps {
+	/* -------- Logo / Site name / Search --------- */
+		
+	#header {
+
+		.hp {
+			margin-top: 70px;
+			padding-bottom: 40px;
+		}
+
+		#site_link {
+			color: #333;
+			text-decoration: none;
+		}
+
+
+		#site_logo {
+			height: 50px;
+			margin: 10px;
+		}
+
+		#site_name {
+			padding: 10px;
+			font-size: 40px;
+			font-family: $main-font;
+			margin: 0;
+		}
+
+		#site_search {
+			.portlet {
+				margin-bottom: 0px;
+			}			
+			.portlet-header {
+				display: none !important;
+			}
+
+			.portlet-content {
+				background: none !important;
+				border: none !important;
+			}
+
+			.fieldset {
+				position: relative;
+
+				.form-group-inline {
 					display: block;
-					padding: 10px;
-
-					.fieldset {
-						position: relative;
-
-						.form-group-inline {
-							display: block;
-						}
-
-						.lfr-ddm-field-group-inline {
-						    margin-right: 5px;
-						    margin-top: -55px;
-						    position: absolute;
-						    right: 0;
-						}
-					}
-
-					.form-control {
-						border-radius: 1px;
-						font-size: 16px;
-						height: 50px;
-					}
-
-					.portlet-header {
-						display: none !important;
-					}
-
 				}
 
-				.gdpb {
-					color: #333;
-					padding-bottom: 20px;
-
-					a {
-						text-decoration: none;
-						color: inherit;
-						display: inline-flex;
-					}
-
-					img {
-						height: 50px;
-						margin-top: 30px;
-						padding-right: 10px;
-					}
-
-					h1 {
-						font-size: 45px;
-						padding: 30px 1px 1px 1px;
-						font-family: $main-font;
-					}
+				.lfr-ddm-field-group-inline {
+				    margin-right: 5px;
+				    margin-top: -55px;
+				    position: absolute;
+				    right: 0;
 				}
-			}	
-		} 
+			}
+
+			.form-control {
+				border-radius: 1px;
+				font-size: 16px;
+				height: 50px;
+			}
+		}
 	}
 
 
 	/*--------- NAVIGATION ----------*/
 	#n {
 		margin: 0 -15px 20px;
-		
+		background-color:$theme-main-color;
+		min-height: 50px;
 
 		.navbar {
 
-			background-color:$theme-main-color;
+			padding: unset;
+
+
+			.navbar-nav {
+				min-height: 50px;
+
+
+				li.nav-item {
+					a {
+						color: $primary-color;
+						text-transform: uppercase;
+						font-size: $medium-font-size;
+					}
+
+					&:hover, &:focus, &.selected {
+						background-color: #037bab;
+					}
+
+					&.dropdown {
+						.dropdown-menu {
+							background-color: #037bab;
+							border-top-right-radius: 0;
+							border-top-left-radius: 0;
+							width: max-content;
+							padding: 0;
+							max-height: none;
+							margin-top: 0 !important;
+							border-top: 0 !important;
+
+							a.dropdown-item:hover, a.dropdown-item:focus {
+								background-color: #058fc6;
+							}
+						}
+					}
+				}
+			}
+
 			a.navbar-brand {
 				font-size: 0px;
 			    display: block;
@@ -199,110 +216,67 @@ body {
 			    padding: 5px 10px;
 			}
 
-			li.nav-item {
-				a {
-					color: $primary-color;
-					text-transform: uppercase;
-					font-size: $medium-font-size;			
-				}
-			li.nav-item.dropdown {
-				dropdown-menu {
-					background-color: #037bab;
-				    border: 0;
-				    max-height: none;
-				    padding: 0;
-				    width: max-content;
-				}
-			}
 
-			}
 		}
 	}
 
 
+
 	/*----------  FOOTER  ----------*/
-	#f{
+	
+	#f {
 		font-size: $small-font-size;
 		color: $primary-color;
-		margin: 0 -15px;
 
-		.fts{
+		#fts {
 			background-color: $theme-main-color;
-			padding: 30px 0;
-			height: auto;
-			min-height:80px;
+			min-height: 60px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			margin: 0 -15px;
 
-			.fsl {
-				list-style: none;
-				padding: 0;
-				overflow: hidden;
-				margin: 0;
-
-				li {
-					float: left;
-					margin: 0 24px;
-
-					a {
+			.nav {
+				display: relative;
+				flex-direction: unset;
+				> li {
+					> a {
 						color: #cce9ff;
 						text-decoration: underline;
-						text-underline-position: under;
+            			text-underline-position: under;
 					}
-
-					&.first {
-						margin-left: 0;
-					}
-
-					&.last {
-						margin-right: 0;
-					}
-
-					&.divider {
-						height: 19px;
-						border-left: 1px solid $primary-color;
-					}
-
 				}
-
-			}
-
-			a {
-				color: $primary-color;
 			}
 		}
 
-		.fbs {
-			background-color: $theme-secondary-color;
-			padding: 30px 0;
+		#fbs {
 			min-height: 100px;
+			background-color: $theme-secondary-color;
+			padding-top: 15px;
+			padding-bottom: 15px;
 			height: auto;
+			margin: 0 -15px;
+
+			#fbsaass {
+		      .pd {
+		        a {
+		          margin: 3px;
+		        }
+		      }
+			}
+
 
 			#fc {
 				width: 40px;
 				height: 100%;
 			}
 
-			.rt {
+			#rotpngp {
 				font-family: $main-font;
-
-				#frt {
-					margin: 0;
-				}
-
-				#fnt {
-					font-size: 24px;
-					margin: 0;
-				}
+				font-size: 24px;
 			}
 
-			.pd {
-				a {
-					margin: 3px;
-				}
-			}
+
 		}
-		
 	}
-
-
 	
 }

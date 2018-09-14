@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1536630060749
+Bnd-LastModified: 1536908819928
 Bundle-ClassPath: ext/WEB-INF/classes,WEB-INF/classes,WEB-INF/lib/util
  -bridges.jar,WEB-INF/lib/util-java.jar
 Bundle-ManifestVersion: 2

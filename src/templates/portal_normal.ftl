@@ -22,36 +22,24 @@
 
 <div class="container-fluid" id="wrapper">
 	<header id="banner" role="banner">
-		<div id="heading">
+		
+		<div id="quick_access">
 
 			<#include "${full_templates_path}/quick_access.ftl" />
 
 
 		</div>
 
-		<div id="header" class="container-fluid">
-			<div class="gdp">
-				<div class="gdpb row text-center">
-					<a href="${site_default_url}">
-						<img src="${company_logo}" alt="${community_name} logo" />
-						<#if show_site_name>
-							<h1>${community_name}</h1>
-						</#if>
-					</a>
-				</div>
 
-				<div class="gdps row text-center">
-					<div class="col-md-4 col-md-offset-4">
-						<@liferay.search />
-					</div>
-				</div>
-
-			</div>
+		<div id="header">
+			<#include "${full_templates_path}/header.ftl" />
 		</div>
+
+			
 	</header>
 
 
-	<#include "${full_templates_path}/nav.ftl" />
+	<#include "${full_templates_path}/navigation.ftl" />
 
 	<div class="container" id="content">
       	<!--div class="custom-breadcrumb">

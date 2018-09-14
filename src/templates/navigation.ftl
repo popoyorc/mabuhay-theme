@@ -1,67 +1,60 @@
 <div id="n">
 	<div class="container">
-		<nav class="${nav_css_class}" id="nav">
-			<ul aria-label="<@liferay.language key="site-pages" />" role="menubar">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+		  <a class="navbar-brand" href="${themeDisplay.getPortalURL()}" alt="GOV.PH"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
 
-				<li class="rrs">
-					<a href="${site_default_url}">GOV.PH</a>
-				</li>
-
-
-				<#list nav_items as nav_item>
-					<#assign
-						nav_item_attr_has_popup = ""
-						nav_item_attr_selected = ""
-						nav_item_css_class = ""
-						nav_item_layout = nav_item.getLayout()
-					/>
-
-					<#if nav_item.isSelected()>
-						<#assign
-							nav_item_attr_has_popup = "aria-haspopup='true'"
-							nav_item_attr_selected = "aria-selected='true'"
-							nav_item_css_class = "selected"
-						/>
-					</#if>
-
-					<li ${nav_item_attr_selected} class="${nav_item_css_class}" id="layout_${nav_item.getLayoutId()}" role="presentation">
-						<a  aria-labelledby="layout_${nav_item.getLayoutId()}"
-							${nav_item_attr_has_popup}
-							href="${nav_item.getURL()}" 
-							${nav_item.getTarget()}
-							role="menuitem">
-							<span>
-								<@liferay_theme["layout-icon"] layout=nav_item_layout /> ${nav_item.getName()}
-							</span>
-							<#if nav_item.hasChildren()>
-								<span class="caret"></span>
-							</#if>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+			<#list nav_items as nav_item>
+				<#if nav_item.hasChildren()>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							${nav_item.getName()} <span class="caret"></span>
 						</a>
-
-						<#if nav_item.hasChildren()>
-							<ul class="child-menu" role="menu">
-								<#list nav_item.getChildren() as nav_child>
-									<#assign
-										nav_child_attr_selected = ""
-										nav_child_css_class = ""
-									/>
-
-									<#if nav_item.isSelected()>
-										<#assign
-											nav_child_attr_selected = "aria-selected='true'"
-											nav_child_css_class = "selected"
-										/>
-									</#if>
-
-									<li ${nav_child_attr_selected} class="${nav_child_css_class}" id="layout_${nav_child.getLayoutId()}" role="presentation">
-										<a aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">${nav_child.getName()}</a>
-									</li>
-								</#list>
-							</ul>
-						</#if>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<#list nav_item.getChildren() as nav_child>
+								<a class="dropdown-item" href="${nav_child.getURL()}" ${nav_child.getTarget()}>${nav_child.getName()}
+								</a>
+							</#list>
+							<!--div class="dropdown-divider"></div-->
+						</div>
 					</li>
-				</#list>
-			</ul>
+				<#else>
+					<li class="nav-item">
+						<a class="nav-link" href="${nav_item.getURL()}" ${nav_item.getTarget()}>
+							${nav_item.getName()}
+						</a>
+					</li>
+				</#if>
+			</#list>
+
+
+
+
+		      <!--li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Link</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link disabled" href="#">Disabled</a>
+		      </li-->
+		    </ul>
+
+
+
+
+		    <!--form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form-->
+		  </div>
 		</nav>
 	</div>
 </div>
+
+<!-- -->
