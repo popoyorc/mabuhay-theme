@@ -14,8 +14,6 @@
 
 <body class="${css_class}">
 
-<@liferay_ui["quick-access"] contentId="#main-content" />
-
 <@liferay_util["include"] page=body_top_include />
 
 <@liferay.control_menu />
@@ -59,6 +57,8 @@
 	</div>
 
 	<#include "${full_templates_path}/footer.ftl" />
+
+<script type="text/javascript" src="${javascript_folder}/theme.js"></script>
 
 </div>
 

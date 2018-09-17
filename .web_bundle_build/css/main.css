@@ -3174,6 +3174,8 @@ body {
   /* -------- Logo / Site name / Search --------- */
   /*--------- NAVIGATION ----------*/
   /*----------  FOOTER  ----------*/ }
+  body .no-title h2.portlet-title-text {
+    display: none; }
   body .portlet-decorate .portlet-content {
     border-color: #e7e7e7; }
   body .porlet:hover > .portlet-content {
@@ -3211,9 +3213,15 @@ body {
     body #banner #qa {
       margin-top: -24px; }
       body #banner #qa #psts {
-        padding: 0.5rem 1rem; }
-      body #banner #qa .nav {
+        padding: 0.5rem 1rem;
+        color: #777; }
+      body #banner #qa #ass .nav {
         flex-direction: unset; }
+        body #banner #qa #ass .nav > li > a {
+          color: #777; }
+        body #banner #qa #ass .nav > li #sign-inout {
+          text-decoration: underline;
+          text-underline-position: under; }
   body #header .hp {
     margin-top: 70px;
     padding-bottom: 40px; }

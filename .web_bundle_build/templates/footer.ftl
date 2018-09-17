@@ -39,7 +39,7 @@
               </div>
             </div>
             <div class="col-lg-11 col-md-12 d-flex justify-content-center justify-content-lg-start">
-              <p id="rotpngp">REPUBLIC OF THE PHILIPPINES<br>National Government Portal</p>
+              <p id="rotpngp" class="d-flex justify-content-center justify-content-lg-start">REPUBLIC OF THE PHILIPPINES<br>National Government Portal</p>
             </div>
           </div>
         </div>

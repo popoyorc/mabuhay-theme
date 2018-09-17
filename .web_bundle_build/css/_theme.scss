@@ -3,6 +3,14 @@
 
 
 body {
+
+
+	.no-title {
+		h2.portlet-title-text {
+			display: none;
+		}
+
+	}
 	background-color: #fafafa !important;
 	font-size: $small-font-size;
 
@@ -23,6 +31,13 @@ body {
 		.portlet-content {
 			background-color: $primary-color;
 		}
+	}
+
+	.portlet-barebone {
+		h2.portlet-title-text {
+			display: none;
+		}
+
 	}
 
 	.portlet {
@@ -70,6 +85,7 @@ body {
 	#banner{
 
 		/* ----------- PST / Accessibility / Sign in / Sign up------------ */
+
 		#qa {
 			margin-top: -24px;
 
@@ -90,68 +106,68 @@ body {
 	}
 
 
-		/* -------- Logo / Site name / Search --------- */
-		#header {
-			.gdp {
-				margin-top: 70px;
-				padding-bottom: 40px;
+	/* -------- Logo / Site name / Search --------- */
+		
+	#header {
 
-				.gdps {
+		.hp {
+			margin-top: 70px;
+			padding-bottom: 40px;
+		}
+
+		#site_link {
+			color: #333;
+			text-decoration: none;
+		}
+
+
+		#site_logo {
+			height: 50px;
+			margin: 10px;
+		}
+
+		#site_name {
+			padding: 10px;
+			font-size: 40px;
+			font-family: $main-font;
+			margin: 0;
+		}
+
+		#site_search {
+			.portlet {
+				margin-bottom: 0px;
+			}			
+			.portlet-header {
+				display: none !important;
+			}
+
+			.portlet-content {
+				background: none !important;
+				border: none !important;
+			}
+
+			.fieldset {
+				position: relative;
+
+				.form-group-inline {
 					display: block;
-					padding: 10px;
-
-					.fieldset {
-						position: relative;
-
-						.form-group-inline {
-							display: block;
-						}
-
-						.lfr-ddm-field-group-inline {
-						    margin-right: 5px;
-						    margin-top: -55px;
-						    position: absolute;
-						    right: 0;
-						}
-					}
-
-					.form-control {
-						border-radius: 1px;
-						font-size: 16px;
-						height: 50px;
-					}
-
-					.portlet-header {
-						display: none !important;
-					}
-
 				}
 
-				.gdpb {
-					color: #333;
-					padding-bottom: 20px;
-
-					a {
-						text-decoration: none;
-						color: inherit;
-						display: inline-flex;
-					}
-
-					img {
-						height: 50px;
-						margin-top: 30px;
-						padding-right: 10px;
-					}
-
-					h1 {
-						font-size: 45px;
-						padding: 30px 1px 1px 1px;
-						font-family: $main-font;
-					}
+				.lfr-ddm-field-group-inline {
+				    margin-right: 5px;
+				    margin-top: -55px;
+				    position: absolute;
+				    right: 0;
 				}
-			}	
-		} 
+			}
 
+			.form-control {
+				border-radius: 1px;
+				font-size: 16px;
+				height: 50px;
+			}
+		}
+	}
 
 
 	/*--------- NAVIGATION ----------*/

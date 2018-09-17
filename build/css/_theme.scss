@@ -3,6 +3,14 @@
 
 
 body {
+
+
+	.no-title {
+		h2.portlet-title-text {
+			display: none;
+		}
+
+	}
 	background-color: #fafafa !important;
 	font-size: $small-font-size;
 
@@ -80,19 +88,32 @@ body {
 
 		#qa {
 			margin-top: -24px;
+			
 
 
 			
 			#psts {
 				padding: 0.5rem 1rem;
+				color: #777;
 			}
 
 			#ass {
+				.nav {
+					flex-direction: unset;
+					> li {
+						> a {
+							color: #777;
+						}
+
+						#sign-inout {
+							text-decoration: underline;
+							text-underline-position: under;
+						}
+					}
+				}
 			}
 
-			.nav {
-				flex-direction: unset;
-			}
+			
 		}
 
 	}
