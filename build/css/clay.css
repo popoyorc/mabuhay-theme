@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url(font_awesome.css);
-@import url(font_awesome.css);
+@import url(font_awesome.css?t=1537321337742);
+@import url(font_awesome.css?t=1537321337742);
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -5981,6 +5981,7 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+/* ---------- THEME VARIABLE ---------- */
 /* ---------- Help messages, general additional information, etc. ---------- */
 .portlet-msg-progress {
   background-image: url(../images/aui/loading_indicator.gif);
@@ -13830,9 +13831,9 @@ a .icon-spin {
     -o-transform: rotate(359deg); } }
 
 @-ms-keyframes spin {
-  0% {
+0% {
     -ms-transform: rotate(0deg); }
-  100% {
+100% {
     -ms-transform: rotate(359deg); } }
 
 @keyframes spin {
@@ -18314,6 +18315,7 @@ div.splitter,
   height: 100%;
   width: 1em; }
 
+/* ---------- THEME VARIABLE ---------- */
 /* ---------- Help messages, general additional information, etc. ---------- */
 .portlet-msg-progress {
   background-image: url(../images/aui/loading_indicator.gif);

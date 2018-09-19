@@ -288,9 +288,9 @@ a .icon-spin {
     -o-transform: rotate(359deg); } }
 
 @-ms-keyframes spin {
-  0% {
+0% {
     -ms-transform: rotate(0deg); }
-  100% {
+100% {
     -ms-transform: rotate(359deg); } }
 
 @keyframes spin {

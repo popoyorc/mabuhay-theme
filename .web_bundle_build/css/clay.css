@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url(font_awesome.css);
-@import url(font_awesome.css);
+@import url(font_awesome.css?t=1537321337742);
+@import url(font_awesome.css?t=1537321337742);
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -13831,9 +13831,9 @@ a .icon-spin {
     -o-transform: rotate(359deg); } }
 
 @-ms-keyframes spin {
-  0% {
+0% {
     -ms-transform: rotate(0deg); }
-  100% {
+100% {
     -ms-transform: rotate(359deg); } }
 
 @keyframes spin {

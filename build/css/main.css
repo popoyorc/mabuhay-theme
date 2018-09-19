@@ -1,3 +1,4 @@
+/* ---------- THEME VARIABLE ---------- */
 .loadingmask-message {
   background: transparent;
   border-width: 0;
@@ -3165,9 +3166,156 @@ input.switch:empty ~ .switch-bar:after, input.switch:empty ~ .switch-bar:before,
   -o-transform: rotate(15deg);
   transform: rotate(15deg); }
 
-/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
-/* inject:imports */
-/* endinject */
-/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
-#THISID {
-  color: blue; }
+/* ---------- THEME STYLEZ  ---------- */
+/* ----------  BANNER  ---------- */
+body {
+  background-color: #fafafa !important;
+  font-size: 14px;
+  /* -------- Logo / Site name / Search --------- */
+  /*--------- NAVIGATION ----------*/
+  /*----------  FOOTER  ----------*/ }
+  body .no-title h2.portlet-title-text {
+    display: none; }
+  body .portlet-decorate .portlet-content {
+    border-color: #e7e7e7; }
+  body .porlet:hover > .portlet-content {
+    border-color: #e7e7e7; }
+  body .portlet-borderless .portlet-content {
+    background-color: #fff; }
+  body .portlet-barebone h2.portlet-title-text {
+    display: none; }
+  body .portlet h2.portlet-title-text {
+    font-family: Georgia, Serif;
+    font-size: 28px; }
+  body .portlet .portlet > .portlet-content-editable {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+  body .portlet .portlet-content-editable {
+    border-radius: 0 0 4px 4px; }
+  body .portlet .portlet-topper {
+    background-color: #f7f7f7;
+    border-color: #e7e7e7;
+    border-radius: 4px 4px 0 0;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: #777; }
+  body .sheet-footer {
+    background-color: #fff;
+    border-top: 1px solid #e7e7ed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px 24px;
+    width: 100%;
+    position: fixed; }
+  body #banner {
+    /* ----------- PST / Accessibility / Sign in / Sign up------------ */ }
+    body #banner #qa {
+      margin-top: -24px; }
+      body #banner #qa #psts {
+        padding: 0.5rem 1rem;
+        color: #777; }
+      body #banner #qa #ass .nav {
+        flex-direction: unset; }
+        body #banner #qa #ass .nav > li > a {
+          color: #777; }
+        body #banner #qa #ass .nav > li #sign-inout {
+          text-decoration: underline;
+          text-underline-position: under; }
+  body #header .hp {
+    margin-top: 70px;
+    padding-bottom: 40px; }
+  body #header #site_link {
+    color: #333;
+    text-decoration: none; }
+  body #header #site_logo {
+    height: 50px;
+    margin: 10px; }
+  body #header #site_name {
+    padding: 10px;
+    font-size: 40px;
+    font-family: Georgia, Serif;
+    margin: 0; }
+  body #header #site_search .portlet {
+    margin-bottom: 0px; }
+  body #header #site_search .portlet-header {
+    display: none !important; }
+  body #header #site_search .portlet-content {
+    background: none !important;
+    border: none !important; }
+  body #header #site_search .fieldset {
+    position: relative; }
+    body #header #site_search .fieldset .form-group-inline {
+      display: block; }
+    body #header #site_search .fieldset .lfr-ddm-field-group-inline {
+      margin-right: 5px;
+      margin-top: -55px;
+      position: absolute;
+      right: 0; }
+  body #header #site_search .form-control {
+    border-radius: 1px;
+    font-size: 16px;
+    height: 50px; }
+  body #n {
+    margin: 0 -15px 20px;
+    background-color: #003d6b;
+    min-height: 50px; }
+    body #n .navbar {
+      padding: unset; }
+      body #n .navbar .navbar-nav {
+        min-height: 50px; }
+        body #n .navbar .navbar-nav li.nav-item a {
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 16px; }
+        body #n .navbar .navbar-nav li.nav-item:hover, body #n .navbar .navbar-nav li.nav-item:focus, body #n .navbar .navbar-nav li.nav-item.selected {
+          background-color: #037bab; }
+        body #n .navbar .navbar-nav li.nav-item.dropdown .dropdown-menu {
+          background-color: #037bab;
+          border-top-right-radius: 0;
+          border-top-left-radius: 0;
+          width: max-content;
+          padding: 0;
+          max-height: none;
+          margin-top: 0 !important;
+          border-top: 0 !important; }
+          body #n .navbar .navbar-nav li.nav-item.dropdown .dropdown-menu a.dropdown-item:hover, body #n .navbar .navbar-nav li.nav-item.dropdown .dropdown-menu a.dropdown-item:focus {
+            background-color: #058fc6; }
+      body #n .navbar a.navbar-brand {
+        font-size: 0px;
+        display: block;
+        height: 50px;
+        width: 56px;
+        background: url(../images/navigation/rps.png) 10px center no-repeat;
+        padding: 5px 10px; }
+  body #f {
+    font-size: 14px;
+    color: #fff; }
+    body #f #fts {
+      background-color: #003d6b;
+      min-height: 60px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin: 0 -15px; }
+      body #f #fts .nav {
+        display: relative;
+        flex-direction: unset; }
+        body #f #fts .nav > li > a {
+          color: #cce9ff;
+          text-decoration: underline;
+          text-underline-position: under; }
+    body #f #fbs {
+      min-height: 100px;
+      background-color: #002541;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      height: auto;
+      margin: 0 -15px; }
+      body #f #fbs #fbsaass .pd a {
+        margin: 3px; }
+      body #f #fbs #fc {
+        width: 40px;
+        height: 100%; }
+      body #f #fbs #rotpngp {
+        font-family: Georgia, Serif;
+        font-size: 24px; }
