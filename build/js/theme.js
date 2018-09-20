@@ -7,8 +7,8 @@
 AUI().ready('pst-module', function(A){
 
   // embed pst
-  (function(c,d){var a,b=c.getElementById(d);a=c.createElement("script");a.id="gwt-pst-jsdk";a.src="http://gwhs.i.gov.ph/pst/gwtpst.js?"+(new Date).getTime();b&&b.parentNode.insertBefore(a,b)})
-  (document,"gwt-pst");
+  (function(c,d){var a,b=c.getElementById(d);a=c.createElement("script");a.id="gwt-pst-jsdk";a.src="http://gwhs.i.gov.ph/pst/gwtpst.js?"+(new Date).getTime();b&&b.parentNode.insertAfter(a,b)})
+  (document,"pst-time");
   var gwtpstReady=function(){new gwtpstTime({elementId:"pst-time",keyboardTrap:!0})};
 
   var duration = 500;
