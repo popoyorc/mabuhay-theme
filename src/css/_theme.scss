@@ -9,10 +9,16 @@ body {
 		h2.portlet-title-text {
 			display: none;
 		}
-
 	}
+
+
 	background-color: #fafafa !important;
 	font-size: $small-font-size;
+
+	.lfr-form-content{
+		position: unset !important;
+	}
+	
 
 	.portlet-decorate {
 		.portlet-content  {

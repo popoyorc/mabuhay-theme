@@ -3176,6 +3176,8 @@ body {
   /*----------  FOOTER  ----------*/ }
   body .no-title h2.portlet-title-text {
     display: none; }
+  body .lfr-form-content {
+    position: unset !important; }
   body .portlet-decorate .portlet-content {
     border-color: #e7e7e7; }
   body .porlet:hover > .portlet-content {
